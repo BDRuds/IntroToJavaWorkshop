@@ -8,36 +8,36 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class FlamingNinjaStar {
 	public static void main(String[] args) {
+		Robot Blake = new Robot();
+		Blake.penDown();
+		Blake.setSpeed(10);
 
 		int baseSize = 300;		//the size of the black part of the star
 		int flameSize = 200;		//the length of the flaming arms
 
-		// *14. Use the methods setX and setY to move the ninja star into the center of the screen
+		Blake.setX(1000);
+		Blake.setY(300);
+for (int i = 0; ; i++) {
+	
+			Blake.turn(360/8);
 		
-		// *15. Make some adjustments to see what other kinds of shapes you can make.
-
-		// 1. Make a new robot, and set it's pen down.
-
-		// 12. Set the robot speed to 10
-
-		// 13. Make all the code below repeat 25 times
-
-			// 2. Turn the robot 1/8 of a circle
-		
-			// 3. Move the robot 64 pixels
+			Blake.move(64);
 
 			
-			// 4. Turn the robot 40 degrees to the LEFT. (Negative numbers will turn the robot counter-clockwise.)
+			Blake.turn(-40);
+			Blake.setPenColor(238, 000, 000);
 			
-			// 5. Move the robot the distance in the variable flameSize
+			Blake.move(flameSize);
 			
-			// 6. Turn the robot 170 degrees
+			Blake.turn(170);
 			
-			// 7. Move the robot the distance in the variable flameSize (again)
+			Blake.move(flameSize);
+			Blake.setPenColor(0,0,0);
 			
-			// 8. Turn the robot 64 degrees to the right
+			Blake.turn(64);
 			
-			// 9. Move the robot the distance in the variable baseSize
+			Blake.move(baseSize);
+}
 			
 			// 10. Check that your shape is the same as Figure 1. This is one arm of the ninja star.
 			// 11. Color your ninja star like Figure 2.
